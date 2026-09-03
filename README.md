@@ -48,11 +48,11 @@ Each IMU message provides angular velocity and linear acceleration. `robot_senso
 
 <table>
   <tr>
-    <td align="center"><img src="figures/robot_parking.JPG" alt="Parking-lot sequence" width="180"></td>
-    <td align="center"><img src="figures/robot_grass2.jpg" alt="Grass sequence" width="180"></td>
-    <td align="center"><img src="figures/robot_road.jpg" alt="Asphalt-road sequence" width="180"></td>
-    <td align="center"><img src="figures/robot_construction.jpg" alt="Construction-site sequence" width="180"></td>
-    <td align="center"><img src="figures/robot_offroad.jpg" alt="Off-road sequence" width="180"></td>
+    <td align="center"><img src="figures/robot_parking.JPG" alt="Parking-lot sequence" width="160" height="200"></td>
+    <td align="center"><img src="figures/robot_grass2.jpg" alt="Grass sequence" width="160" height="200"></td>
+    <td align="center"><img src="figures/robot_road.jpg" alt="Asphalt-road sequence" width="160" height="200"></td>
+    <td align="center"><img src="figures/robot_construction.jpg" alt="Construction-site sequence" width="160" height="200"></td>
+    <td align="center"><img src="figures/robot_offroad.jpg" alt="Off-road sequence" width="160" height="200"></td>
   </tr>
   <tr>
     <td align="center"><code>parking_lots</code></td>
