@@ -1,7 +1,5 @@
 # DogLegs
 
-**Robust proprioceptive state estimation for legged robots with multiple leg-mounted IMUs.**
-
 [Paper (arXiv)](https://arxiv.org/abs/2503.04580) · [IEEE Xplore](https://ieeexplore.ieee.org/document/11246027) · [Dataset](https://drive.google.com/drive/folders/1wIB7fVQ7DWmxf8idoZhdczL5d7XPhJOk?usp=drive_link)
 
 DogLegs estimates the main-body pose, velocity, and IMU errors from a body IMU, four leg IMUs, joint encoders. It is a **standalone C++17 program**: ROS is needed only to record the input bags, not to run the estimator.
