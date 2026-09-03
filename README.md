@@ -37,8 +37,8 @@ python3 utils/plot.py output/parking_lots
 DogLegs reads **uncompressed ROS1 v2 bags** with one body-IMU topic, four leg-IMU topics, and the robot-sensor topic:
 
 ```text
-/doglegs/imu/body, /doglegs/imu/fl, /doglegs/imu/fr
-/doglegs/imu/rl,   /doglegs/imu/rr     sensor_msgs/Imu
+/doglegs/imu/body, /doglegs/imu/fl, /doglegs/imu/fr,
+/doglegs/imu/rl,   /doglegs/imu/rr, sensor_msgs/Imu,
 /doglegs/robot_sensor
 ```
 
@@ -46,22 +46,9 @@ Each IMU message provides angular velocity and linear acceleration. `robot_senso
 
 ## Field sequences
 
-<table>
-  <tr>
-    <td align="center"><img src="figures/robot_parking.JPG" alt="Parking-lot sequence" width="160" height="200"></td>
-    <td align="center"><img src="figures/robot_grass2.jpg" alt="Grass sequence" width="160" height="200"></td>
-    <td align="center"><img src="figures/robot_road.jpg" alt="Asphalt-road sequence" width="160" height="200"></td>
-    <td align="center"><img src="figures/robot_construction.jpg" alt="Construction-site sequence" width="160" height="200"></td>
-    <td align="center"><img src="figures/robot_offroad.jpg" alt="Off-road sequence" width="160" height="200"></td>
-  </tr>
-  <tr>
-    <td align="center"><code>parking_lots</code></td>
-    <td align="center"><code>grass</code></td>
-    <td align="center"><code>asphalt_road</code></td>
-    <td align="center"><code>construction_site</code></td>
-    <td align="center"><code>offroad</code></td>
-  </tr>
-</table>
+<p align="center">
+  <img src="figures/field_sequences.jpg" alt="Field sequences: parking lots, grass, asphalt road, construction site, and offroad" width="100%">
+</p>
 
 ## Citation
 
