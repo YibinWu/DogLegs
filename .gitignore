@@ -1,0 +1,7 @@
+datasets/
+.agents/
+.codex/
+build/
+cmake-build-*/
+*.o
+*.log

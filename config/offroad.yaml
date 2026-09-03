@@ -1,0 +1,70 @@
+# Dataset: offroad 
+bagpath: "datasets/offroad.bag"
+outputpath: "output/offroad"
+
+imudatalen: 7
+imudatarate: 200
+
+starttime: 338112
+endtime: 338327 
+
+initAlignmentTime: 10 # seconds
+ 
+initposstd: [ 0.05, 0.05, 0.05 ] # m
+initvelstd: [ 0.05, 0.05, 0.05 ] # m/s
+initattstd: [ 1.0, 1.0, 0.5 ] # deg
+
+imunoise:
+  arw: 1.2          # [deg/sqrt(hr)]
+  vrw: 6            # [m/s/sqrt(hr)]
+  gbstd: 20         # [deg/hr]
+  abstd: 2000       # [mGal]
+  gsstd: 500         # [ppm]
+  asstd: 500        # [ppm]
+  corrtime: 0.5     # [hr]
+
+# Leverarm, leg's contact point in the imu frame
+fl_imu_leverarm: [0, 0.03, 0.048]
+fr_imu_leverarm: [0, -0.03, 0.048]
+rl_imu_leverarm: [0, 0.03, 0.048]
+rr_imu_leverarm: [0, -0.03, 0.048]
+
+if_estimate_leverarm: false
+LegIMU_Leverarm_STD: 0.005
+LegIMU_Leverarm_Noise: 0.0001
+
+# Mounting angle of the leg-imu with respect to the leg, includes only roll and heading
+fl_imu_mountingangle: [0, 0, 0]
+fr_imu_mountingangle: [0, 0, 0]
+rl_imu_mountingangle: [0, 0, 0]
+rr_imu_mountingangle: [0, 0, 0]
+
+# Zero Velocity Update measurement standard deviation
+zupt_std: [0.02, 0.02, 0.02]
+zihr_std: 0.1
+
+# ZUPT time interval
+zupt_dt: 0.02
+
+# multi-imu relative position constraint time interval
+if_use_multi_imu_constraint: true
+relpos_dt: 0.1
+relpos_std: 0.01
+    
+# robot_bframe to front_right_down
+rotmat: [ 1, 0, 0, 
+          0, -1, 0, 
+          0, 0, -1]
+
+# Extrinsic of the body-imu w.r.t. the body. 
+# (body-frame: front-right-down)
+base_in_bodyimu: [0.0, 0.0, 0.1]
+
+
+# Robot paras
+robotpara:
+  ox: 0.1934
+  oy: 0.0465
+  ot: 0.0955
+  lc: 0.213
+  lt: 0.213
