@@ -15,10 +15,6 @@ Authors: Yibin Wu, Jian Kuang, Shahram Khorshidi, Xiaoji Niu, Lasse Klingbeil,
 Maren Bennewitz, and Heiner Kuhlmann.
 
 
-<p align="center">
-  <img src="figure.png" width="720" alt="DogLegs overview">
-</p>
-
 ## Method
 
 This is our implementation to estimate the state of the legged robot's main body with a body mounted IMU and the joint encoders [[1](#2-reference), [2](#2-reference)]. We use the rosbag collected from an [unitree go2](https://github.com/unitreerobotics/unitree_ros2) robot. 
@@ -37,6 +33,10 @@ DogLegs/
 ```
 
 Runtime results are written to the `outputpath` specified in each config.
+
+## Dataset
+
+Download the [ datasets](https://drive.google.com/drive/folders/1wIB7fVQ7DWmxf8idoZhdczL5d7XPhJOk?usp=drive_link) ,then place them in the `datasets/` directory.
 
 ## Build and Run
 
