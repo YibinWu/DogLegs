@@ -2,9 +2,8 @@
 
 [Paper (arXiv)](https://arxiv.org/abs/2503.04580) · [IEEE Xplore](https://ieeexplore.ieee.org/document/11246027) · [Dataset](https://drive.google.com/drive/folders/1wIB7fVQ7DWmxf8idoZhdczL5d7XPhJOk?usp=drive_link)
 
-DogLegs estimates the main-body pose, velocity, and IMU errors from a body IMU, four leg IMUs, joint encoders. It is a **standalone C++17 program**: ROS is needed only to record the input bags, not to run the estimator.
+DogLegs estimates the main-body pose, velocity, and IMU errors from a body IMU, four leg IMUs, and joint encoders. Meanwhile, our [leg-odometry](https://github.com/YibinWu/leg-odometry) repository provides the baseline system. It uses a body IMU and joint encoders, without foot-mounted IMUs. DogLegs is a **standalone C++17 program**: ROS is needed only to record the input bags, not to run the estimator.
 
-Our [leg-odometry](https://github.com/YibinWu/leg-odometry) repository provides the baseline system. It uses a body IMU and joint encoders, without foot-mounted IMUs.
 
 <p align="center">
   <img src="figures/dogleg_overview.jpg" alt="DogLegs estimation pipeline" width="100%">
