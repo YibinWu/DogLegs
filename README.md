@@ -2,7 +2,7 @@
 
 [Paper (arXiv)](https://arxiv.org/abs/2503.04580) · [IEEE Xplore](https://ieeexplore.ieee.org/document/11246027) · [Dataset](https://drive.google.com/drive/folders/1wIB7fVQ7DWmxf8idoZhdczL5d7XPhJOk?usp=drive_link)
 
-DogLegs estimates the main-body pose, velocity, and IMU errors from a body IMU, four leg IMUs, and joint encoders. Meanwhile, our [leg-odometry](https://github.com/YibinWu/leg-odometry) repository provides the baseline system. It uses a body IMU and joint encoders, without foot-mounted IMUs. DogLegs is a **standalone C++17 program**: ROS is needed only to record the input bags, not to run the estimator.
+DogLegs estimates the main-body pose, velocity, and IMU errors from a body IMU, four leg-mounted IMUs, and joint encoders. Meanwhile, our [leg-odometry](https://github.com/YibinWu/leg-odometry) repository provides the baseline system. It uses a body IMU and joint encoders, without leg-mounted IMUs. DogLegs is a **standalone C++17 program**: ROS is needed only to record the input bags, not to run the estimator.
 
 
 <p align="center">
@@ -10,8 +10,6 @@ DogLegs estimates the main-body pose, velocity, and IMU errors from a body IMU, 
 </p>
 
 ## Quick start
-
-Requirements: Linux, CMake 3.10+, and a C++17 compiler. Eigen, yaml-cpp, and Abseil are vendored under `ThirdParty/`.
 
 Download the [datasets](https://drive.google.com/drive/folders/1wIB7fVQ7DWmxf8idoZhdczL5d7XPhJOk?usp=drive_link) into `datasets/`, then build and run a sequence:
 
@@ -29,7 +27,7 @@ Plot an estimated trajectory with optional ground truth:
 python3 utils/plot.py output/parking_lots
 ```
 
-## Input bag format
+## Input rosbag format
 
 DogLegs reads **uncompressed ROS1 v2 bags** with one body-IMU topic, four leg-IMU topics, and the robot-sensor topic:
 
